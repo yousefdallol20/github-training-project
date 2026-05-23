@@ -379,3 +379,58 @@ body {
     color: var(--white);
 }
 
+/* تذييل الصفحة الاحترافي */
+.footer-distributed {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 50px 0;
+    margin-top: 6px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-brand h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.footer-brand h3 span { color: var(--primary-color); }
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-links a:hover { opacity: 1; color: var(--primary-color); }
+
+.footer-company-name {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-contact p {
+    font-size: 15px;
+    opacity: 0.9;
+}
