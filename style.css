@@ -1,0 +1,33 @@
+/* الإعدادات العامة والألوان الثابتة للمشروع */
+:root {
+    --primary-color: #ff4757;      /* اللون الأساسي - أحمر شهي */
+    --secondary-color: #2f3542;    /* اللون الداكن للنصوص والخلفيات */
+    --accent-color: #ffa502;       /* لون التقييمات والاشعارات */
+    --light-bg: #f1f2f6;           /* لون الخلفية الفاتحة */
+    --white: #ffffff;
+    --text-muted: #747d8c;
+    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: var(--secondary-color);
+    direction: rtl;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
