@@ -22,7 +22,13 @@ This project was created as a front-end practice project using basic web technol
 
 ## 📸 Screenshots
 
+### Home Page
+![Home Page](img/Screenshot%20(6).png)
 
+![Meals](img/Screenshot%20(7).png)
+
+### Footer
+![Footer](img/Screenshot%20(8).png)
 
 ---
 
