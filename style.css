@@ -434,3 +434,38 @@ body {
     font-size: 15px;
     opacity: 0.9;
 }
+
+
+/* شاشة الموبايل والتجاوب الذكي */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-menu {
+        gap: 15px;
+        font-size: 14px;
+    }
+    .hero-inner h1 {
+        font-size: 32px;
+    }
+    .search-bar-box {
+        flex-direction: column;
+        border-radius: 15px;
+        gap: 10px;
+        background: transparent;
+        box-shadow: none;
+    }
+    .search-bar-box input {
+        border-radius: 10px;
+        background: var(--white);
+    }
+    .btn-search {
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
