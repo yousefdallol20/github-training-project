@@ -194,3 +194,188 @@ body {
     background-color: #ff6b81;
 }
 
+/* قسم التصنيفات */
+.categories-section {
+    padding: 60px 0;
+    background-color: var(--white);
+}
+
+.section-title {
+    font-size: 28px;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 700;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background-color: var(--light-bg);
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.category-card:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.category-card:hover h3, .category-card:hover .cat-icon {
+    color: var(--white);
+}
+
+.cat-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: var(--transition-smooth);
+}
+
+.category-card h3 {
+    font-size: 18px;
+    color: var(--secondary-color);
+    transition: var(--transition-smooth);
+}
+
+/* كروت المنتجات (الأطباق) */
+.products-section {
+    padding: 80px 0;
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    margin-top: 5px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.card-img-holder {
+    height: 220px;
+    position: relative;
+    background-color: #ddd;
+}
+
+/* خلفيات تمثيلية للصور لتجنب الروابط المكسورة */
+.placeholder-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.bg-burger { background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80'); }
+.bg-pizza { background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80'); }
+.bg-box { background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80'); }
+
+.tag-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 30px;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.tag-status.discount { background-color: var(--primary-color); }
+.tag-status.popular { background-color: var(--accent-color); color: var(--secondary-color); }
+
+.card-details {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.restaurant-name {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.meal-title {
+    font-size: 20px;
+    margin: 5px 0 10px 0;
+    color: var(--secondary-color);
+}
+
+.rating {
+    font-size: 14px;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.meal-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.old-price {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.btn-add-to-cart {
+    background-color: var(--light-bg);
+    border: none;
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.product-card:hover .btn-add-to-cart {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
